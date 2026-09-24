@@ -1,0 +1,93 @@
+.container {
+  width: min(100% - 32px, 600px);
+  margin: 32px auto;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #242629;
+  color: #ffffff;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.inputGroup input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.inputGroup button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e90ff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.dark .inputGroup button {
+  background-color: #85d1b0;
+  color: #000000;
+}
+
+.inputGroup button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.dark .taskItem {
+  background-color: #33363a;
+  color: #ffffff;
+}
+
+.taskItem button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1e90ff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.dark .taskItem button {
+  background-color: #85d1b0;
+  color: #000000;
+}
