@@ -1,12 +1,14 @@
 import Navbar from "./components/Navbar";
+import TaskManager from "./components/TaskManager";
 import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   return (
     <ThemeProvider>
       <Navbar />
+
       <main>
-        <h1>React State Management</h1>
+        <TaskManager />
       </main>
     </ThemeProvider>
   );
