@@ -1,8 +1,14 @@
+import Navbar from "./components/Navbar";
+import { ThemeProvider } from "./context/ThemeContext";
+
 function App() {
   return (
-    <main>
-      <h1>React State Management</h1>
-    </main>
+    <ThemeProvider>
+      <Navbar />
+      <main>
+        <h1>React State Management</h1>
+      </main>
+    </ThemeProvider>
   );
 }
 
